@@ -1,0 +1,43 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: #111;
+	font-family: 'Montserrat', sans-serif;
+	overflow: hidden;
+}
+.box {
+	position: relative;
+    width: 1000px;
+    height: 600px;
+    border: 3px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.fairy{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background-color: hsla(210, 80%, 50%, .3);
+    animation: fairy 2s ;
+    pointer-events: none;
+}
+@keyframes fairy {
+    0%{
+        scale: .4;
+        opacity: 1;
+    }
+    50%{
+        scale: 1;
+        opacity: 1;
+        background-color: crimson;
+    }
+    100%{
+        opacity: 0;
+        
+    }
+}
